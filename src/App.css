@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-image: url("todolist.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 1vh -13vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  width: 60%;
+  border-radius: 10px;
+  background-image: initial;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: auto;
+  height: 250px;
+}
+.header input {
+  width: 60%;
+  height: 30px;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+.header button {
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: lightcoral;
+  color: rgb(80, 62, 62);
+  margin-bottom: 80px;
+}
+.btn {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  gap: 10%;
+
+}
+.line-thr {
+  text-decoration: line-through;
+}
+.text {
+  text-decoration: none;
+  font-size: 20px;
+  font-style: oblique;
+  font-family: monospace;
+}
+.Command {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+  margin-top: 25px;
+}
+.Command-bar {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+.Command-bar button {
+  width: 80px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: chocolate;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border-color: chocolate;
 }
